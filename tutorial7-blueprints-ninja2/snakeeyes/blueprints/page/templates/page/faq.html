@@ -1,0 +1,24 @@
+{% extends 'layouts/base.html' %}
+
+{% block title %}FAQ{% endblock %}
+{% block heading %}<h2>FAQ</h2>{% endblock %}
+
+{% block body %}
+  <p>
+    In this page, we show the answers to most frequent questions at  
+    <a href="http://{{ config.get('SERVER_NAME') }}">
+      http://{{ config.get('SERVER_NAME') }}
+    </a>.
+  </p>
+  <p>
+      <h3>What is this website?</h3>
+  </p>
+  <ul>
+    <li>
+      This is a tutorial webapp for learning flask. 
+    </li>
+</ul>
+
+
+  <small class="text-muted">Last updated April 1st 2042</small>
+{% endblock %}
